@@ -11,3 +11,10 @@ databaseChangeLog:
             columns:
               - name: diet_preferences
                 type: VARCHAR(50)
+  - changeSet:
+      id: storz-2
+      author: storz
+      labels: tag_2 
+      changes:
+      -  sqlFile:
+           path:  examples/change001.sql
