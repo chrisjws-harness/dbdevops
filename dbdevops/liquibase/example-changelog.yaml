@@ -18,3 +18,10 @@ databaseChangeLog:
       changes:
       -  sqlFile:
            path:  sql/change001.sql
+  - changeSet:
+      id: storz-3
+      author: storz
+      labels: tag_3 
+      changes:
+      -  sqlFile:
+           path:  sql/change002.sql
