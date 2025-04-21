@@ -1,6 +1,6 @@
 databaseChangeLog: 
   - changeSet:
-      id: storz:1
+      id: storz-1
       author: storz
       labels: tag_1
       context: example-context
@@ -9,6 +9,5 @@ databaseChangeLog:
         - addColumn:
             tableName: contacts
             columns:
-              - column:
-                  name: climate
-                  type: VARCHAR(50)  
+              - name: diet_preferences
+                type: VARCHAR(50)
