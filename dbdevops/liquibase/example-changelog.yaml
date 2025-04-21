@@ -7,7 +7,7 @@ databaseChangeLog:
       comment: example
       changes:
         - addColumn:
-            tableName: contacts.contacts
+            tableName: contacts
             columns:
               - name: diet_preferences
                 type: VARCHAR(50)
