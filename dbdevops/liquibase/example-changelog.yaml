@@ -7,7 +7,7 @@ databaseChangeLog:
       comment: example comment
       changes:
         - addColumn:
-            tableName: wild_aniumals
+            tableName: contacts
             columns:
               - column:
                   name: climate
