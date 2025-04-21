@@ -1,0 +1,24 @@
+databaseChangeLog:
+  - changeSet:
+      id: satwell:20-sql-rollback-separate-file
+      author: satwell
+      labels: tag_1 
+      changes:
+      -  sqlFile:
+           path:  examples/001.sql
+      rollback:
+      -  sqlFile:
+           path:  examples/rollback_001.sql   
+  - changeSet:
+      id: satwell:21
+      author: satwell
+      labels: tag_1 
+      context: example-context
+      comment: example comment
+      changes:
+        - addColumn:
+            tableName: wild_aniumals
+            columns:
+              - column:
+                  name: climate
+                  type: VARCHAR(50)   
