@@ -17,4 +17,4 @@ databaseChangeLog:
       labels: tag_2 
       changes:
       -  sqlFile:
-           path:  examples/change001.sql
+           path:  sql/change001.sql
