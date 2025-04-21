@@ -1,1 +1,14 @@
-databaseChangeLog: []
+databaseChangeLog: 
+  - changeSet:
+      id: storz:1
+      author: storz
+      labels: tag_1 
+      context: example-context
+      comment: example comment
+      changes:
+        - addColumn:
+            tableName: wild_aniumals
+            columns:
+              - column:
+                  name: climate
+                  type: VARCHAR(50)  
