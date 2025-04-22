@@ -30,7 +30,7 @@ databaseChangeLog:
       author: storz
       labels: tag_4
       context: example-context
-      comment: example comment 2
+      comment: example comment 3
       changes:
         - addColumn:
             tableName: contacts
