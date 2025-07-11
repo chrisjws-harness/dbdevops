@@ -37,3 +37,13 @@ databaseChangeLog:
             columns:
               - name: eye_color
                 type: VARCHAR(50)
+  - changeSet:
+    id: storz-5
+    author: storz
+    changes:
+      - addColumn:
+          tableName: contacts
+          columns:
+            - name: favorite_color
+              type: VARCHAR(30)
+
