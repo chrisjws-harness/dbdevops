@@ -47,3 +47,13 @@ databaseChangeLog:
               - column:
                   name: ear_color
                   type: VARCHAR(50)  
+  - changeSet:
+      id: add-hair-color-to-users-v5
+      author: yourname
+      changes:
+        - addColumn:
+            tableName: users_v2
+            columns:
+              - column:
+                  name: ear_color_v2
+                  type: VARCHAR(50)  
