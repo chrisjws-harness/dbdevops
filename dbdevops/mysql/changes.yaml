@@ -17,3 +17,13 @@ databaseChangeLog:
                   type: VARCHAR(255)
                   constraints:
                     nullable: false
+  - changeSet:
+      id: add-hair-color-to-users-v2
+      author: yourname
+      changes:
+        - addColumn:
+            tableName: users_v2
+            columns:
+              - column:
+                  name: hair_color
+                  type: VARCHAR(50)
