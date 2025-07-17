@@ -27,3 +27,13 @@ databaseChangeLog:
               - column:
                   name: hair_color
                   type: VARCHAR(50)
+  - changeSet:
+      id: add-hair-color-to-users-v3
+      author: yourname
+      changes:
+        - addColumn:
+            tableName: users_v2
+            columns:
+              - column:
+                  name: eye_color
+                  type: VARCHAR(50)  
