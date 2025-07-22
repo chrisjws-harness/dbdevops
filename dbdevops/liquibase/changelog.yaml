@@ -1,1 +1,14 @@
+databaseChangeLog: 
+  - changeSet:
+      id: cs-1
+      author: cs
+      labels: tag_1
+      context: example-context
+      comment: example comment
+      changes:
+        - addColumn:
+            tableName: asdf_table
+            columns:
+              - name: preference
+                type: VARCHAR(50)
 
