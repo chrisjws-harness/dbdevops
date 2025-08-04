@@ -57,3 +57,14 @@ databaseChangeLog:
               - column:
                   name: ear_color_v2
                   type: VARCHAR(50)  
+  - changeSet:
+      id: add-tablex
+      author: you
+      comment: Create tablex with a single column
+      changes:
+        - createTable:
+            tableName: tablex
+            columns:
+              - column:
+                  name: name
+                  type: VARCHAR(255)
